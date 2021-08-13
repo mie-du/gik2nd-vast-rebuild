@@ -1,0 +1,85 @@
+.nav {
+  position: relative;
+  z-index: 7;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(
+    hsla(207, 50%, 15%, 0.8),
+    hsla(207, 50%, 15%, 1)
+  );
+  backdrop-filter: blur(10px);
+}
+
+.nav__left {
+  padding-bottom: 0.4em;
+}
+.nav__right {
+  box-shadow: inset 0 1px var(--clr1DarkDesat);
+  padding-top: 0.4em;
+}
+
+.nav__home,
+.nav__hamburger,
+.nav__link,
+.nav__home:visited ,
+.nav__hamburger:visited ,
+.nav__link:visited {
+  color: var(--white);
+  padding: 1rem 2rem;
+}
+
+.nav__home:hover ,
+.nav__hamburger:hover ,
+.nav__link:hover {
+  background-color: var(--clr1VeryDarkSat);
+  text-decoration: none;
+}
+
+.nav__menu .nav__link--current {
+  color: var(--clr3Sat);
+}
+
+@media only screen and (min-width: 480px) {
+  .nav__home,
+  .nav__hamburger,
+  .nav__link {
+    font-size: 0.9em;
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav__home,
+  .nav__hamburger,
+  .nav__link {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav__hamburger {
+    display: none;
+  }
+
+  .nav__left {
+    padding-bottom: 0;
+  }
+  .nav__right {
+    box-shadow: none;
+    padding-top: 0;
+  }
+
+  .nav__home,
+  .nav__hamburger,
+  .nav__link {
+    font-size: 0.75em;
+  }
+  .nav__menu .nav__link--current {
+    box-shadow: inset 0 -4px var(--clr3Sat);
+    color: var(--white);
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>VAST - Members</title>
+  <meta name="description"
+    content="This text will quite often be displayed beneath the page name in the search results" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="./styles/variables/variables.css" />
+  <link rel="stylesheet" href="./styles/base/base.css" />
+  <link rel="stylesheet" href="./styles/grid/grid.css" />
+  <link rel="stylesheet" href="./styles/utilities/utilities.css" />
+  <link rel="stylesheet" href="./styles/layout/layout.css" />
+  <link rel="stylesheet" href="./styles/components/large/container.css" />
+  <link rel="stylesheet" href="./styles/components/large/navbar.css" />
+  <link rel="stylesheet" href="./styles/components/large/modal.css" />
+  <link rel="stylesheet" href="./styles/components/large/form.css" />
+  <link rel="stylesheet" href="./styles/components/small/button.css" />
+  <link rel="stylesheet" href="./styles/components/small/social-media.css" />
+  <link rel="stylesheet" href="./styles/components/small/image.css" />
+  <link rel="stylesheet" href="./styles/components/small/thumbnail.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__animation page-header__animation--back page-header__animation--blur"></div>
+    <h1 class="page-header__heading">V<span class="clr3Sat">A</span>ST</h1>
+    <div class="page-header__animation page-header__animation--front page-header__animation--blur"></div>
+    <nav class="container nav flex fbetween fmiddle">
+      <a class="nav__home" href="./home.html">V<span class="clr3Sat">A</span>ST</a>
+      <a class="nav__hamburger" href="#">&#9776;</a>
+      <div class="nav__menu fcol-12 fcol-md-auto fgrow flex fcol frow-md fbetween-md">
+        <div class="nav__left flex fcol fcenter frow-md">
+          <a class="nav__link nav__link--current" href="./members.html">Members</a>
+        </div>
+        <div class="nav__right flex fcol fcenter frow-md">
+          <a class="nav__link" href="./account.html">Account</a>
+          <a class="nav__link" href="./sign_up.html">Sign up</a>
+          <a class="login nav__link" href="#">Log in</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main main--margin">
+    <section class="container">
+      <header class="into">
+        <div class="flex fcol-12 fcol-lg-7 mb-3">
+          <h1 class="fcol-12"><span class="clr1Dark">Gall</span><span class="clr3Sat">ery</span></h1>
+          <p>A list containing all our members</p>
+        </div>
+      </header>
+      <!--  fpc fpc-col-12 fpc-col-xs-6 fpc-col-md-4 fpc-col-lg-3 fpc-col-xl-5 -->
+      <ul class="gallery grid grid--replica">
+        <li class="thumbnail">
+          <a href="./account.html" title="Link to Alexander Karlsson">
+            <div class="thumbnail__image">
+              <img srcset="
+                        ./img/members/0/0_256.webp 256w,
+                        ./img/members/0/0_512.webp 512w,
+                        ./img/members/0/0_1024.webp 1024w,
+                        ./img/members/0/0_2048.webp 2048w" sizes="
+                        (min-width: 1600px) calc((100vw - 26.6vw) / 5),
+                        (min-width: 1200px) calc((100vw - 20vw) / 4),
+                        (min-width: 992px) calc((100vw - 14vw) / 3),
+                        (min-width: 480px) calc((100vw - 30px) / 2), 
+                        calc((100vw - 30px)" src="./img/members/0/0.jpg" alt="Image of Alexander Karlsson" />
+            </div>
+          </a>
+          <div class="thumbnail__caption">
+            <h4 class="thumbnail__title thumbnail__title--tertiary">Alexander Karlsson</h4>
+            <p class="thumbnail__text t-right"><a href="mailto:alk@du.se" title="Mail Alexander Karlsson">alk@du.se</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="./js/headerBG.js"></script>
+  <script src="./js/members.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>

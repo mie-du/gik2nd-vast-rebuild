@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>VAST - Alexander</title>
+  <meta name="description"
+    content="This text will quite often be displayed beneath the page name in the search results" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="./styles/variables/variables.css" />
+  <link rel="stylesheet" href="./styles/base/base.css" />
+  <link rel="stylesheet" href="./styles/grid/grid.css" />
+  <link rel="stylesheet" href="./styles/utilities/utilities.css" />
+  <link rel="stylesheet" href="./styles/layout/layout.css" />
+  <link rel="stylesheet" href="./styles/components/large/container.css" />
+  <link rel="stylesheet" href="./styles/components/large/navbar.css" />
+  <link rel="stylesheet" href="./styles/components/large/modal.css" />
+  <link rel="stylesheet" href="./styles/components/large/form.css" />
+  <link rel="stylesheet" href="./styles/components/small/button.css" />
+  <link rel="stylesheet" href="./styles/components/small/social-media.css" />
+  <link rel="stylesheet" href="./styles/components/large/info.css" />
+  <link rel="stylesheet" href="./styles/components/large/table.css" />
+  <link rel="stylesheet" href="./styles/components/small/pill.css" />
+  <link rel="stylesheet" href="./styles/components/small/image.css" />
+  <link rel="stylesheet" href="./styles/components/small/progress.css" />
+  <link rel="stylesheet" href="./styles/themes/glassmorphism.css" />
+  <link rel="stylesheet" href="./styles/pages/account.css" />
+  <link rel="stylesheet" href="./styles/dev.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__animation page-header__animation--back page-header__animation--blur"></div>
+    <h1 class="page-header__heading">V<span class="clr3Sat">A</span>ST</h1>
+    <div class="page-header__animation page-header__animation--front page-header__animation--blur"></div>
+    <nav class="container nav flex fbetween fmiddle">
+      <a class="nav__home" href="./home.html">V<span class="clr3Sat">A</span>ST</a>
+      <a class="nav__hamburger" href="#">&#9776;</a>
+      <div class="nav__menu fcol-12 fcol-md-auto fgrow flex fcol frow-md fbetween-md">
+        <div class="nav__left flex fcol fcenter frow-md">
+          <a class="nav__link" href="./members.html">Members</a>
+        </div>
+        <div class="nav__right flex fcol fcenter frow-md">
+          <a class="nav__link nav__link--current" href="./account.html">Account</a>
+          <a class="nav__link" href="./sign_up.html">Sign up</a>
+          <a class="login nav__link" href="#">Log in</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="account main">
+    <section class="account__section container">
+      <header class="account__header">
+        <div class="account__personal">
+          <p class="account__date">1984-03-19</p>
+          <h1 class="account__name">Alexander Karlsson</h1>
+        </div>
+        <div class="account__img-mail">
+          <div class="image image--circle image--rotate image--glass image--color">
+            <div class="image__container">
+              <img
+                srcset="./img/members/0/0_256.webp 256w, ./img/members/0/0_512.webp 512w, ./img/members/0/0_1024.webp 1024w, ./img/members/0/0_2048.webp 2048w"
+                src="./img/members/0/0.jpg"
+                alt="Black and whute portrait of Alexander Karlsson from the shoulders up. Looking upwards" />
+            </div>
+          </div>
+          <a class="account__mail btn btn--circle btn--blur" href="mailto:alk@du.se"
+            title="Mail to Alexander Karlsson">&#x2709;</a>
+        </div>
+      </header>
+      <div class="account__info flex fcenter fstart-xs">
+        <div class="info">
+          <h2 class="info__heading"><span class="info__drop-cap">P</span>resentation
+          </h2>
+          <div class="info__text-block">
+            <p>
+              My nickname is Alle. I have two children. My four and a half years old son Elis and my two year old
+              daughter Ida.
+              My parter is a skilled mother, graphic designer, painter, illustrator and a wonderful person.
+            </p>
+            <p>
+              I have three sisters. A doctor, a psychologist and a criminologist. It's easy to see that
+              the my siblings have found different areas of interests in life. I believe I add to that diversity by
+              being in
+              love with subjects such as quantum mechanics, astronomy, geology, anthropology, DNA and
+              ancient-history.
+            </p>
+            <p>
+              If I ever find room for it, I've been known to read "The Wheel of Time".
+            </p>
+          </div>
+          <p class="info__meta">Alexander <span>Karlsson</span></p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container container--bg-sea-spray container--bg-blur-4 o-hidden container--bg-success-gradient container--bg-blend-color container--skew-left">
+      <div class="flex">
+        <h2 class="container__heading container__heading--border-bottom container__heading--padding-right">Knowledge
+        </h2>
+        <div class="fcol-12 fcol-xl-10 glass">
+          <div class="progress">
+            <div class="progress__item">
+              <p class="progress__text" style="width:97%" data-value="97">Photoshop</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 97%" aria-valuetext="HTML skill level 97%" aria-valuenow="97"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:92%" data-value="92">CSS</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 92%" aria-valuetext="CSS skill level 92%" aria-valuenow="9295"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:90%" data-value="90">HTML</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 90%" aria-valuetext="HTML skill level 90%" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:84%" data-value="84">InDesign</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 84%" aria-valuetext="HTML skill level 84%" aria-valuenow="84"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:77%" data-value="77">Illustrator</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 77%" aria-valuetext="HTML skill level 77%" aria-valuenow="77"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:75%" data-value="75">Cinema 4D</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 75%" aria-valuetext="HTML skill level 75%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:69%" data-value="69">After Effects</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 69%" aria-valuetext="HTML skill level 69%" aria-valuenow="69"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:58%" data-value="58">Python</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 58%" role="progressbar" aria-valuetext="Python skill level 58%"
+                  aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:56%" data-value="56">JavaScript</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 56%" aria-valuetext="JS skill level 56%" aria-valuenow="56"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:47%" data-value="47">R</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 47%" aria-valuetext="JS skill level 47%" aria-valuenow="47"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress__item">
+              <p class="progress__text" style="width:20%" data-value="20">C++</p>
+              <div class="progress__wrapper">
+                <div class="progress__bar" style="width: 20%" aria-valuetext="C++ skill level 20%" aria-valuenow="20"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container container--bg-sea-spray container--bg-blur-4 o-hidden container--bg-danger-gradient container--bg-blend-color container--skew-right">
+      <div class="flex fend">
+        <h2 class="container__heading container__heading--border-bottom container__heading--padding-left">Course
+          Activity</h2>
+        <div class="fcol-12 fcol-xl-10 glass">
+          <table class="table table--hover table--radius">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Period</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GIK298</td>
+                <td>Data- and Information Management</td>
+                <td>1</td>
+                <td>1</td>
+                <td>Lecturer</td>
+              </tr>
+              <tr>
+                <td>GIK297</td>
+                <td>Responsive Web Design</td>
+                <td>1</td>
+                <td>2</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>GIK2AM</td>
+                <td>Visual Identity</td>
+                <td>1</td>
+                <td>3</td>
+                <td>Lecturer</td>
+              </tr>
+              <tr>
+                <td>GIK299</td>
+                <td>Object Oriented Programming</td>
+                <td>1</td>
+                <td>3</td>
+                <td>Lecturer</td>
+              </tr>
+              <tr>
+                <td>GIK2LF</td>
+                <td>Digital Imaging</td>
+                <td>2</td>
+                <td>2</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>GIK2F8</td>
+                <td>Dynamic Web Applications</td>
+                <td>2</td>
+                <td>2</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>GIK2H8</td>
+                <td>User Centered Design</td>
+                <td>2</td>
+                <td>3</td>
+                <td>Lecturer</td>
+              </tr>
+              <tr>
+                <td>GIK2H9</td>
+                <td>Design of Web Applications</td>
+                <td>2</td>
+                <td>3</td>
+                <td>Lecturer</td>
+              </tr>
+              <tr>
+                <td>GIK2JL</td>
+                <td>Information Design</td>
+                <td>2</td>
+                <td>4</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>GIK2LG</td>
+                <td>Collaborative Project</td>
+                <td>3</td>
+                <td>1</td>
+                <td>Admin</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/headerBG.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>
