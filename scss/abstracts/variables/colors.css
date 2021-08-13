@@ -1,0 +1,178 @@
+@charset "UTF-8";
+:root {
+  --black: hsla(229, 12%, 17%, 1);
+  --white: hsla(207, 100%, 96%, 1);
+
+  /* Color 1 */
+  --clr1ExtremelyDark: hsla(208, 100%, 8%, 1);
+  --clr1VeryDark: hsla(207, 20%, 20%, 1);
+  --clr1VeryDarkSat: hsla(207, 39%, 20%, 1);
+  --clr1VeryDarkDesat: hsla(204, 10%, 20%, 1);
+  --clr1Dark: hsla(207, 30%, 40%, 1);
+  --clr1DarkSat: hsla(207, 50%, 40%, 1);
+  --clr1DarkDesat: hsla(207, 20%, 40%, 1);
+  --clr1: hsla(207, 40%, 60%, 1);
+  --clr1Sat: hsla(207, 60%, 60%, 1);
+  --clr1Desat: hsla(207, 30%, 60%, 1);
+  --clr1Light: hsla(207, 50%, 75%, 1);
+  --clr1LightSat: hsla(207, 70%, 75%, 1);
+  --clr1LightDesat: hsla(207, 40%, 75%, 1);
+  --clr1VeryLight: hsla(207, 61%, 90%, 1);
+  --clr1VeryLightSat: hsla(206, 80%, 90%, 1);
+  --clr1VeryLightDesat: hsla(206, 49%, 90%, 1);
+
+  /* Color 2 */
+  --clr2VeryDark: hsla(234, 20%, 20%, 1);
+  --clr2VeryDarkSat: hsla(234, 39%, 20%, 1);
+  --clr2VeryDarkDesat: hsla(234, 10%, 20%, 1);
+  --clr2Dark: hsla(232, 30%, 40%, 1);
+  --clr2DarkSat: hsla(233, 50%, 40%, 1);
+  --clr2DarkDesat: hsla(234, 20%, 40%, 1);
+  --clr2: hsla(233, 40%, 60%, 1);
+  --clr2Sat: hsla(233, 60%, 60%, 1);
+  --clr2Desat: hsla(232, 30%, 60%, 1);
+  --clr2Light: hsla(233, 50%, 75%, 1);
+  --clr2LightSat: hsla(233, 70%, 75%, 1);
+  --clr2LightDesat: hsla(233, 40%, 75%, 1);
+  --clr2VeryLight: hsla(232, 61%, 90%, 1);
+  --clr2VeryLightSat: hsla(233, 80%, 90%, 1);
+  --clr2VeryLightDesat: hsla(233, 49%, 90%, 1);
+
+  /* Color 3 */
+  --clr3VeryDark: hsla(333, 20%, 20%, 1);
+  --clr3VeryDarkSat: hsla(333, 39%, 20%, 1);
+  --clr3VeryDarkDesat: hsla(336, 10%, 20%, 1);
+  --clr3Dark: hsla(333, 30%, 40%, 1);
+  --clr3DarkSat: hsla(333, 50%, 40%, 1);
+  --clr3DarkDesat: hsla(333, 20%, 40%, 1);
+  --clr3: hsla(333, 40%, 60%, 1);
+  --clr3Sat: hsla(333, 60%, 60%, 1);
+  --clr3Desat: hsla(333, 30%, 60%, 1);
+  --clr3Light: hsla(333, 50%, 75%, 1);
+  --clr3LightSat: hsla(333, 70%, 75%, 1);
+  --clr3LightDesat: hsla(333, 40%, 75%, 1);
+  --clr3VeryLight: hsla(333, 61%, 90%, 1);
+  --clr3VeryLightSat: hsla(334, 80%, 90%, 1);
+  --clr3VeryLightDesat: hsla(334, 49%, 90%, 1);
+
+  /* Color 4 */
+  --clr4VeryDark: hsla(153, 20%, 20%, 1);
+  --clr4VeryDarkSat: hsla(153, 39%, 20%, 1);
+  --clr4VeryDarkDesat: hsla(156, 10%, 20%, 1);
+  --clr4Dark: hsla(153, 30%, 40%, 1);
+  --clr4DarkSat: hsla(153, 50%, 40%, 1);
+  --clr4DarkDesat: hsla(153, 20%, 40%, 1);
+  --clr4: hsla(153, 40%, 60%, 1);
+  --clr4Sat: hsla(153, 60%, 60%, 1);
+  --clr4Desat: hsla(153, 30%, 60%, 1);
+  --clr4Light: hsla(153, 50%, 75%, 1);
+  --clr4LightSat: hsla(153, 70%, 75%, 1);
+  --clr4LightDesat: hsla(153, 40%, 75%, 1);
+  --clr4VeryLight: hsla(153, 61%, 90%, 1);
+  --clr4VeryLightSat: hsla(154, 80%, 90%, 1);
+  --clr4VeryLightDesat: hsla(154, 49%, 90%, 1);
+
+  /* Color 5 */
+  --clr5VeryDark: hsla(45, 20%, 20%, 1);
+  --clr5VeryDarkSat: hsla(47, 39%, 20%, 1);
+  --clr5VeryDarkDesat: hsla(48, 10%, 20%, 1);
+  --clr5Dark: hsla(45, 30%, 40%, 1);
+  --clr5DarkSat: hsla(46, 50%, 40%, 1);
+  --clr5DarkDesat: hsla(46, 20%, 40%, 1);
+  --clr5: hsla(46, 40%, 60%, 1);
+  --clr5Sat: hsla(46, 60%, 60%, 1);
+  --clr5Desat: hsla(45, 30%, 60%, 1);
+  --clr5Light: hsla(46, 50%, 75%, 1);
+  --clr5LightSat: hsla(46, 70%, 75%, 1);
+  --clr5LightDesat: hsla(46, 40%, 75%, 1);
+  --clr5VeryLight: hsla(46, 61%, 90%, 1);
+  --clr5VeryLightSat: hsla(45, 80%, 90%, 1);
+  --clr5VeryLightDesat: hsla(46, 49%, 90%, 1);
+
+  
+  /* Transparent Color 1 */
+  --clr1ExtremelyDarkTrans: hsla(208, 100%, 8%, 0);
+  --clr1VeryDarkTrans: hsla(207, 20%, 20%, 0);
+  --clr1VeryDarkSatTrans: hsla(207, 39%, 20%, 0);
+  --clr1VeryDarkDesatTrans: hsla(204, 10%, 20%, 0);
+  --clr1DarkTrans: hsla(207, 30%, 40%, 0);
+  --clr1DarkSatTrans: hsla(207, 50%, 40%, 0);
+  --clr1DarkDesatTrans: hsla(207, 20%, 40%, 0);
+  --clr1Trans: hsla(207, 40%, 60%, 0);
+  --clr1SatTrans: hsla(207, 60%, 60%, 0);
+  --clr1DesatTrans: hsla(207, 30%, 60%, 0);
+  --clr1LightTrans: hsla(207, 50%, 75%, 0);
+  --clr1LightSatTrans: hsla(207, 70%, 75%, 0);
+  --clr1LightDesatTrans: hsla(207, 40%, 75%, 0);
+  --clr1VeryLightTrans: hsla(207, 61%, 90%, 0);
+  --clr1VeryLightSatTrans: hsla(206, 80%, 90%, 0);
+  --clr1VeryLightDesatTrans: hsla(206, 49%, 90%, 0);
+
+  /* Transparent Color 2 */
+  --clr2VeryDarkTrans: hsla(234, 20%, 20%, 0);
+  --clr2VeryDarkSatTrans: hsla(234, 39%, 20%, 0);
+  --clr2VeryDarkDesatTrans: hsla(234, 10%, 20%, 0);
+  --clr2DarkTrans: hsla(232, 30%, 40%, 0);
+  --clr2DarkSatTrans: hsla(233, 50%, 40%, 0);
+  --clr2DarkDesatTrans: hsla(234, 20%, 40%, 0);
+  --clr2Trans: hsla(233, 40%, 60%, 0);
+  --clr2SatTrans: hsla(233, 60%, 60%, 0);
+  --clr2DesatTrans: hsla(232, 30%, 60%, 0);
+  --clr2LightTrans: hsla(233, 50%, 75%, 0);
+  --clr2LightSatTrans: hsla(233, 70%, 75%, 0);
+  --clr2LightDesatTrans: hsla(233, 40%, 75%, 0);
+  --clr2VeryLightTrans: hsla(232, 61%, 90%, 0);
+  --clr2VeryLightSatTrans: hsla(233, 80%, 90%, 0);
+  --clr2VeryLightDesatTrans: hsla(233, 49%, 90%, 0);
+
+  /* Transparent Color 3 */
+  --clr3VeryDarkTrans: hsla(333, 20%, 20%, 0);
+  --clr3VeryDarkSatTrans: hsla(333, 39%, 20%, 0);
+  --clr3VeryDarkDesatTrans: hsla(336, 10%, 20%, 0);
+  --clr3DarkTrans: hsla(333, 30%, 40%, 0);
+  --clr3DarkSatTrans: hsla(333, 50%, 40%, 0);
+  --clr3DarkDesatTrans: hsla(333, 20%, 40%, 0);
+  --clr3Trans: hsla(333, 40%, 60%, 0);
+  --clr3SatTrans: hsla(333, 60%, 60%, 0);
+  --clr3DesatTrans: hsla(333, 30%, 60%, 0);
+  --clr3LightTrans: hsla(333, 50%, 75%, 0);
+  --clr3LightSatTrans: hsla(333, 70%, 75%, 0);
+  --clr3LightDesatTrans: hsla(333, 40%, 75%, 0);
+  --clr3VeryLightTrans: hsla(333, 61%, 90%, 0);
+  --clr3VeryLightSatTrans: hsla(334, 80%, 90%, 0);
+  --clr3VeryLightDesatTrans: hsla(334, 49%, 90%, 0);
+
+  /* Transparent Color 4 */
+  --clr4VeryDarkTrans: hsla(153, 20%, 20%, 0);
+  --clr4VeryDarkSatTrans: hsla(153, 39%, 20%, 0);
+  --clr4VeryDarkDesatTrans: hsla(156, 10%, 20%, 0);
+  --clr4DarkTrans: hsla(153, 30%, 40%, 0);
+  --clr4DarkSatTrans: hsla(153, 50%, 40%, 0);
+  --clr4DarkDesatTrans: hsla(153, 20%, 40%, 0);
+  --clr4Trans: hsla(153, 40%, 60%, 0);
+  --clr4SatTrans: hsla(153, 60%, 60%, 0);
+  --clr4DesatTrans: hsla(153, 30%, 60%, 0);
+  --clr4LightTrans: hsla(153, 50%, 75%, 0);
+  --clr4LightSatTrans: hsla(153, 70%, 75%, 0);
+  --clr4LightDesatTrans: hsla(153, 40%, 75%, 0);
+  --clr4VeryLightTrans: hsla(153, 61%, 90%, 0);
+  --clr4VeryLightSatTrans: hsla(154, 80%, 90%, 0);
+  --clr4VeryLightDesatTrans: hsla(154, 49%, 90%, 0);
+
+  /* Transparent Color 5 */
+  --clr5VeryDarkTrans: hsla(45, 20%, 20%, 0);
+  --clr5VeryDarkSatTrans: hsla(47, 39%, 20%, 0);
+  --clr5VeryDarkDesatTrans: hsla(48, 10%, 20%, 0);
+  --clr5DarkTrans: hsla(45, 30%, 40%, 0);
+  --clr5DarkSatTrans: hsla(46, 50%, 40%, 0);
+  --clr5DarkDesatTrans: hsla(46, 20%, 40%, 0);
+  --clr5Trans: hsla(46, 40%, 60%, 0);
+  --clr5SatTrans: hsla(46, 60%, 60%, 0);
+  --clr5DesatTrans: hsla(45, 30%, 60%, 0);
+  --clr5LightTrans: hsla(46, 50%, 75%, 0);
+  --clr5LightSatTrans: hsla(46, 70%, 75%, 0);
+  --clr5LightDesatTrans: hsla(46, 40%, 75%, 0);
+  --clr5VeryLightTrans: hsla(46, 61%, 90%, 0);
+  --clr5VeryLightSatTrans: hsla(45, 80%, 90%, 0);
+  --clr5VeryLightDesatTrans: hsla(46, 49%, 90%, 0);
+}

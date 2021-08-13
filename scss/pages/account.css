@@ -1,0 +1,240 @@
+.account__section {
+    background: 
+    linear-gradient(150deg, var(--clr3LightDesatTrans) 29.9%, var(--white) 30%),
+    linear-gradient(hsla(207, 50%, 15%, 1) 2%, hsla(207, 50%, 15%, 0) 30%),
+    linear-gradient(0deg, var(--white), var(--clr3LightSat), var(--clr3LightSatTrans) 70%),
+    linear-gradient(45deg, var(--white), var(--clr3Light), var(--clr3LightTrans) 70%),
+    linear-gradient(90deg, var(--white), var(--clr3), var(--clr3Trans) 70%),
+    linear-gradient(135deg, var(--white), var(--clr3VeryLight), var(--clr3VeryLightTrans) 70%),
+    linear-gradient(180deg, var(--white), var(--clr5), var(--clr5Trans) 70%);
+    transition: all 300ms ease-in-out;
+}
+.account__header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: var(--col12);
+}
+.account__personal {
+    position: relative;
+    top: 4rem;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: var(--col10);
+    margin-left: var(--col1);
+}
+.account__name {
+    font-size: 4rem;
+    line-height: 1.1;
+    color: var(--clr5Light);
+    margin-bottom: 0.5rem;
+}
+.account__date {
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--white);
+    text-align: right;
+}
+.account__img-mail {
+    position: relative;
+    flex-basis: var(--col10);
+    margin-left: var(--col1);
+}
+.account__mail {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+@media only screen and (min-width: 480px) {
+    .account__section {
+        background: 
+        linear-gradient(150deg, var(--clr3LightDesatTrans) 34.9%, var(--white) 35%),
+        linear-gradient(hsla(207, 50%, 15%, 1) 2%, hsla(207, 50%, 15%, 0) 30%),
+        linear-gradient(0deg, var(--white), var(--clr3LightSat), var(--clr3LightSatTrans) 70%),
+        linear-gradient(45deg, var(--white), var(--clr3Light), var(--clr3LightTrans) 70%),
+        linear-gradient(90deg, var(--white), var(--clr3), var(--clr3Trans) 70%),
+        linear-gradient(135deg, var(--white), var(--clr3VeryLight), var(--clr3VeryLightTrans) 70%),
+        linear-gradient(180deg, var(--white), var(--clr5), var(--clr5Trans) 70%);
+    }
+    .account__personal {
+        top: 5rem;
+        flex-basis: var(--col6);
+        margin-left: var(--col1);
+    }
+    .account__img-mail {
+        position: relative;
+        flex-basis: var(--col8);
+        margin-left: var(--col2);
+    }
+    .account__mail {
+        right: 4%;
+        bottom: 4%;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    .account__section {
+        background: 
+        linear-gradient(150deg, var(--clr3LightDesatTrans) 39.9%, var(--white) 40%),
+        linear-gradient(hsla(207, 50%, 15%, 1) 2%, hsla(207, 50%, 15%, 0) 30%),
+        linear-gradient(0deg, var(--white), var(--clr3LightSat), var(--clr3LightSatTrans) 70%),
+        linear-gradient(45deg, var(--white), var(--clr3Light), var(--clr3LightTrans) 70%),
+        linear-gradient(90deg, var(--white), var(--clr3), var(--clr3Trans) 70%),
+        linear-gradient(135deg, var(--white), var(--clr3VeryLight), var(--clr3VeryLightTrans) 70%),
+        linear-gradient(180deg, var(--white), var(--clr5), var(--clr5Trans) 70%);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .account__personal {
+        top: 6rem;
+        flex-basis: var(--col5);
+        margin-left: var(--col2);
+    }
+    .account__info {
+        flex-basis: var(--col10);
+        margin-left: var(--col1);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .account__section {
+        background: 
+        linear-gradient(150deg, var(--clr3LightDesatTrans) 37.9%, var(--white) 38%),
+        linear-gradient(hsla(207, 50%, 15%, 1) 2%, hsla(207, 50%, 15%, 0) 30%),
+        linear-gradient(0deg, var(--white), var(--clr3LightSat), var(--clr3LightSatTrans) 70%),
+        linear-gradient(45deg, var(--white), var(--clr3Light), var(--clr3LightTrans) 70%),
+        linear-gradient(90deg, var(--white), var(--clr3), var(--clr3Trans) 70%),
+        linear-gradient(135deg, var(--white), var(--clr3VeryLight), var(--clr3VeryLightTrans) 70%),
+        linear-gradient(180deg, var(--white), var(--clr5), var(--clr5Trans) 70%);
+    }
+    .account__personal {
+        top: 9rem;
+        flex-basis: var(--col6);
+        margin-left: var(--col2);
+    }
+    .account__name {
+        flex-basis: var(--col12);
+        font-size: 5rem;
+        order: 1;
+    }
+    .account__date {
+        order: 2;
+    }
+    .account__img-mail {
+        flex-basis: var(--col6);
+        margin-left: var(--col4);
+    }
+    .account__mail {
+        right: 5%;
+        bottom: 5%;
+    }
+    .account__info {
+        flex-basis: var(--col9);
+        margin-left: var(--col2);
+        position: relative;
+        top: -5rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .account__section {
+        background: 
+        linear-gradient(160deg, var(--clr3LightDesatTrans) 39.9%, var(--white) 40%),
+        linear-gradient(hsla(207, 50%, 15%, 1) 2%, hsla(207, 50%, 15%, 0) 30%),
+        linear-gradient(0deg, var(--white), var(--clr3LightSat), var(--clr3LightSatTrans) 70%),
+        linear-gradient(45deg, var(--white), var(--clr3Light), var(--clr3LightTrans) 70%),
+        linear-gradient(90deg, var(--white), var(--clr3), var(--clr3Trans) 70%),
+        linear-gradient(135deg, var(--white), var(--clr3VeryLight), var(--clr3VeryLightTrans) 70%),
+        linear-gradient(180deg, var(--white), var(--clr5), var(--clr5Trans) 70%);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .account__header {
+        flex-basis: var(--col12);
+    }
+    .account__info {
+        flex-basis: var(--col6);
+        margin-left: var(--col2);
+        position: static;
+    }
+    .account__personal {
+        flex-basis: var(--col6);
+        margin-left: 0;
+    }
+    .account__name {
+        color: var(--clr5Light);
+    }
+    .account__img-mail {
+        flex-basis: var(--col5);
+        margin-left: var(--col7);
+        top: 2rem;
+    }
+    .account__mail {
+        right: 5%;
+        bottom: 5%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .account__personal {
+        top: 20rem;
+    }
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .account__section {
+        background: 
+        linear-gradient(163deg, var(--clr3LightDesatTrans) 39.9%, var(--white) 40%),
+        linear-gradient(hsla(207, 50%, 15%, 1) 2%, hsla(207, 50%, 15%, 0) 30%),
+        linear-gradient(0deg, var(--white), var(--clr3LightSat), var(--clr3LightSatTrans) 70%),
+        linear-gradient(45deg, var(--white), var(--clr3Light), var(--clr3LightTrans) 70%),
+        linear-gradient(90deg, var(--white), var(--clr3), var(--clr3Trans) 70%),
+        linear-gradient(135deg, var(--white), var(--clr3VeryLight), var(--clr3VeryLightTrans) 70%),
+        linear-gradient(180deg, var(--white), var(--clr5), var(--clr5Trans) 70%);
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .account__section {
+        background: 
+        linear-gradient(165deg, var(--clr3LightDesatTrans) 44.9%, var(--white) 45%),
+        linear-gradient(hsla(207, 50%, 15%, 1) 2%, hsla(207, 50%, 15%, 0) 30%),
+        linear-gradient(0deg, var(--white), var(--clr3LightSat), var(--clr3LightSatTrans) 70%),
+        linear-gradient(45deg, var(--white), var(--clr3Light), var(--clr3LightTrans) 70%),
+        linear-gradient(90deg, var(--white), var(--clr3), var(--clr3Trans) 70%),
+        linear-gradient(135deg, var(--white), var(--clr3VeryLight), var(--clr3VeryLightTrans) 70%),
+        linear-gradient(180deg, var(--white), var(--clr5), var(--clr5Trans) 70%);
+    }
+    .account__header {
+        flex-basis: var(--col12);
+    }
+    .account__info {
+        flex-basis: var(--col6);
+        margin-left: var(--col6);
+        position: static;
+    }
+    .account__personal {
+        position: static;
+        flex-basis: var(--col12);
+        margin-left: 0;
+        margin-top: 20rem;
+    }
+    .account__name {
+        font-size: 7rem;
+    }
+    .account__date {
+        font-size: 3rem;
+    }
+    .account__img-mail {
+        flex-basis: var(--col3);
+        margin-left: 0;
+        top: 15rem;
+    }
+    .account__mail {
+        right: 5%;
+        bottom: 5%;
+    }
+}
+

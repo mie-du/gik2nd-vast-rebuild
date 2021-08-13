@@ -1,0 +1,94 @@
+@charset "UTF-8";
+:root {
+  --remSize: 10px;
+  /* --------------- */
+  --box1: 0.25rem;
+  --box2: 0.5rem;
+  --box3: 1.25rem;
+  --box4: 1.5rem;
+  --box5: 1.75rem;
+  --box6: 2rem;
+  --box7: 2.25rem;
+  --box8: 2.5rem;
+  --box9: 2.75rem;
+  --box10: 3rem;
+  --box11: 3.25rem;
+  --box12: 3.5rem;
+  --box13: 3.75rem;
+  --box14: 4rem;
+  --box15: 4.25rem;
+  --box16: 4.5rem;
+  --box17: 4.75rem;
+  --box18: 5rem;
+  --box19: 5.25rem;
+  --box21: 5.5rem;
+  --box22: 5.75rem;
+  --box23: 6rem;
+  --box24: 6.25rem;
+  --box25: 6.5rem;
+  --box26: 6.75rem;
+  --box27: 7rem;
+  /* --------------- */
+  --cols: calc(100% / 12);
+  --col1: var(--cols);
+  --col2: calc(var(--cols) * 2);
+  --col3: calc(var(--cols) * 3);
+  --col4: calc(var(--cols) * 4);
+  --col5: calc(var(--cols) * 5);
+  --col6: calc(var(--cols) * 6);
+  --col7: calc(var(--cols) * 7);
+  --col8: calc(var(--cols) * 8);
+  --col9: calc(var(--cols) * 9);
+  --col10: calc(var(--cols) * 10);
+  --col11: calc(var(--cols) * 11);
+  --col12: 100%;
+  --gridMargin: 15px;
+  --fpc-col1: calc((100% - (var(--gridMargin) * 11)) / 12);
+  --fpc-col2: calc((100% - (var(--gridMargin) * 5)) / 6);
+  --fpc-col3: calc((100% - (var(--gridMargin) * 3)) / 4);
+  --fpc-col4: calc((100% - (var(--gridMargin) * 2)) / 3);
+  --fpc-col5: calc(((100% - (var(--gridMargin) * 4)) / 10) * 2);
+  --fpc-col6: calc((100% - (var(--gridMargin) * 1)) / 2);
+  --fpc-col12: 100%;
+
+  /* --------------- */
+  --pageSidePadding: 15px;
+}
+
+@media only screen and (min-width: 480px) {
+  :root {
+    --remSize: 11px;
+    --gridMargin: 6px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --remSize: 12px;
+    --pageSidePadding: 5vw;
+    --gridMargin: 7px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  :root {
+    --remSize: 13px;
+    --pageSidePadding: 7vw;
+    --gridMargin: 8px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --remSize: 14px;
+    --pageSidePadding: 10vw;
+    --gridMargin: 9px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  :root {
+    --pageSidePadding: 13.3vw;
+    --gridMargin: 10px;
+  }
+}
