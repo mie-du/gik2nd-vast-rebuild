@@ -1,3 +1,6 @@
-for i in $(find -L . -name  "*.css"); do mv $i _${i::-3}scss; done
-
-
+for i in $(find .  -name '*.css'); do 
+  dirName=$(dirname $i);
+  baseName=$(basename $i);
+  echo ${dirName}/_${baseName::-3}scss
+  mv ${i} ${dirName}/_${baseName::-3}scss;
+done
