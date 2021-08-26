@@ -1,4 +1,153 @@
-@charset "UTF-8";
+@use "sass:color";
+
+//Hue
+$blue-hue: 207;
+$lilac-hue: 233;
+$pink-hue: 333;
+$green-hue: 153;
+$yellow-hue: 46;
+
+// Saturation
+$sat-base: 40%;
+$sat-high: 60%;
+$sat-low: 20%;
+
+// Lightnes
+$darkest: 8%;
+$dark: 20%;
+$base: 60%;
+$light: 75%;
+$lightest: 90%;
+
+$blue-darkest: hsla($blue-hue, $sat-base, $darkest, 1);
+$blue-darkest-sat: hsla($blue-hue, $sat-high, $darkest, 1);
+$blue-darkest-desat: hsla($blue-hue, $sat-low, $darkest, 1);
+$blue-dark: hsla($blue-hue, $sat-base, $dark, 1);
+
+$blue-dark-sat: hsla($blue-hue, $sat-high, $dark, 1);
+$blue-dark-desat: hsla($blue-hue, $sat-low, $dark, 1);
+$blue: hsla($blue-hue, $sat-base, $base, 1);
+$blue-sat: hsla($blue-hue, $sat-high, $base, 1);
+$blue-desat: hsla($blue-hue, $sat-low, $base, 1);
+$blue-light: hsla($blue-hue, $sat-base, $light, 1);
+$blue-light-sat: hsla($blue-hue, $sat-high, $light, 1);
+
+$blue-light-desat: hsla($blue-hue, $sat-low, $light, 1);
+$blue-lightest: hsla($blue-hue, $sat-base, $lightest, 1);
+$blue-lightest-sat: hsla($blue-hue, $sat-high, $lightest, 1);
+$blue-lightest-desat: hsla($blue-hue, $sat-low, $lightest, 1);
+
+/* alternativt sätt att göra */
+
+$blue-darkest: color.change($blue, $lightness: $darkest);
+$blue-darkest-sat: color.change(
+  $blue,
+  $saturation: $sat-high,
+  $lightness: $darkest
+);
+
+$blue-darkest-desat: color.change(
+  $blue,
+  $saturation: $sat-low,
+  $lightness: $darkest
+);
+
+$blue-dark: color.change($blue, $lightness: $dark);
+$blue-dark-sat: color.change($blue, $saturation: $sat-high, $lightness: $dark);
+$blue-dark-desat: color.change($blue, $saturation: $sat-low, $lightness: $dark);
+$blue: hsla($blue-hue, $sat-base, $base, 1);
+$blue-sat: color.adjust($blue, $saturation: $sat-high);
+$blue-desat: color.adjust($blue, $saturation: $sat-low);
+$blue-light: color.change($blue, $lightness: $light);
+$blue-light-sat: color.change(
+  $blue,
+  $saturation: $sat-high,
+  $lightness: $light
+);
+$blue-light-desat: color.change(
+  $blue,
+  $saturation: $sat-low,
+  $lightness: $light
+);
+$blue-lightest: color.change($blue, $lightness: $lightest);
+$blue-lightest-sat: color.change(
+  $blue,
+  $saturation: $sat-high,
+  $lightness: $lightest
+);
+$blue-lightest-desat: color.change(
+  $blue,
+  $saturation: $sat-low,
+  $lightness: $lightest
+);
+
+$lilac-darkest: hsla($lilac-hue, $sat-base, $darkest, 1);
+$lilac-darkest-sat: hsla($lilac-hue, $sat-high, $darkest, 1);
+$lilac-darkest-desat: hsla($lilac-hue, $sat-low, $darkest, 1);
+$lilac-dark: hsla($lilac-hue, $sat-base, $dark, 1);
+$lilac-dark-sat: hsla($lilac-hue, $sat-high, $dark, 1);
+$lilac-dark-desat: hsla($lilac-hue, $sat-low, $dark, 1);
+$lilac: hsla($lilac-hue, $sat-base, $base, 1);
+$lilac-sat: hsla($lilac-hue, $sat-high, $base, 1);
+$lilac-desat: hsla($lilac-hue, $sat-low, $base, 1);
+$lilac-light: hsla($lilac-hue, $sat-base, $light, 1);
+$lilac-light-sat: hsla($lilac-hue, $sat-high, $light, 1);
+$lilac-light-desat: hsla($lilac-hue, $sat-low, $light, 1);
+$lilac-lightest: hsla($lilac-hue, $sat-base, $lightest, 1);
+$lilac-lightest-sat: hsla($lilac-hue, $sat-high, $lightest, 1);
+$lilac-lightest-desat: hsla($lilac-hue, $sat-low, $lightest, 1);
+
+$pink-darkest: hsla($pink-hue, $sat-base, $darkest, 1);
+$pink-darkest-sat: hsla($pink-hue, $sat-high, $darkest, 1);
+$pink-darkest-desat: hsla($pink-hue, $sat-low, $darkest, 1);
+$pink-dark: hsla($pink-hue, $sat-base, $dark, 1);
+$pink-dark-sat: hsla($pink-hue, $sat-high, $dark, 1);
+$pink-dark-desat: hsla($pink-hue, $sat-low, $dark, 1);
+$pink: hsla($pink-hue, $sat-base, $base, 1);
+$pink-sat: hsla($pink-hue, $sat-high, $base, 1);
+$pink-desat: hsla($pink-hue, $sat-low, $base, 1);
+$pink-light: hsla($pink-hue, $sat-base, $light, 1);
+$pink-light-sat: hsla($pink-hue, $sat-high, $light, 1);
+$pink-light-desat: hsla($pink-hue, $sat-low, $light, 1);
+$pink-lightest: hsla($pink-hue, $sat-base, $lightest, 1);
+$pink-lightest-sat: hsla($pink-hue, $sat-high, $lightest, 1);
+$pink-lightest-desat: hsla($pink-hue, $sat-low, $lightest, 1);
+
+$green-darkest: hsla($green-hue, $sat-base, $darkest, 1);
+$green-darkest-sat: hsla($green-hue, $sat-high, $darkest, 1);
+$green-darkest-desat: hsla($green-hue, $sat-low, $darkest, 1);
+$green-dark: hsla($green-hue, $sat-base, $dark, 1);
+$green-dark-sat: hsla($green-hue, $sat-high, $dark, 1);
+$green-dark-desat: hsla($green-hue, $sat-low, $dark, 1);
+$green: hsla($green-hue, $sat-base, $base, 1);
+$green-sat: hsla($green-hue, $sat-high, $base, 1);
+$green-desat: hsla($green-hue, $sat-low, $base, 1);
+$green-light: hsla($green-hue, $sat-base, $light, 1);
+$green-light-sat: hsla($green-hue, $sat-high, $light, 1);
+$green-light-desat: hsla($green-hue, $sat-low, $light, 1);
+$green-lightest: hsla($green-hue, $sat-base, $lightest, 1);
+$green-lightest-sat: hsla($green-hue, $sat-high, $lightest, 1);
+$green-lightest-desat: hsla($green-hue, $sat-low, $lightest, 1);
+
+$yellow-darkest: hsla($yellow-hue, $sat-base, $darkest, 1);
+$yellow-darkest-sat: hsla($yellow-hue, $sat-high, $darkest, 1);
+$yellow-darkest-desat: hsla($yellow-hue, $sat-low, $darkest, 1);
+$yellow-dark: hsla($yellow-hue, $sat-base, $dark, 1);
+$yellow-dark-sat: hsla($yellow-hue, $sat-high, $dark, 1);
+$yellow-dark-desat: hsla($yellow-hue, $sat-low, $dark, 1);
+$yellow: hsla($yellow-hue, $sat-base, $base, 1);
+$yellow-sat: hsla($yellow-hue, $sat-high, $base, 1);
+$yellow-desat: hsla($yellow-hue, $sat-low, $base, 1);
+$yellow-light: hsla($yellow-hue, $sat-base, $light, 1);
+$yellow-light-sat: hsla($yellow-hue, $sat-high, $light, 1);
+$yellow-light-desat: hsla($yellow-hue, $sat-low, $light, 1);
+$yellow-lightest: hsla($yellow-hue, $sat-base, $lightest, 1);
+$yellow-lightest-sat: hsla($yellow-hue, $sat-high, $lightest, 1);
+$yellow-lightest-desat: hsla($yellow-hue, $sat-low, $lightest, 1);
+
+$white: hsla($lilac-hue, 100%, 96%);
+$black: hsla($blue-hue, 12%, 17%);
+
 :root {
   --black: hsla(229, 12%, 17%, 1);
   --white: hsla(207, 100%, 96%, 1);
@@ -89,7 +238,6 @@
   --clr5VeryLightSat: hsla(45, 80%, 90%, 1);
   --clr5VeryLightDesat: hsla(46, 49%, 90%, 1);
 
-  
   /* Transparent Color 1 */
   --clr1ExtremelyDarkTrans: hsla(208, 100%, 8%, 0);
   --clr1VeryDarkTrans: hsla(207, 20%, 20%, 0);
