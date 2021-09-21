@@ -41,7 +41,7 @@
 }
 
 .nav__menu .nav__link--current {
-  color: var(--clr3Sat);
+  color: c.$pink; 
 }
 
 @media only screen and (min-width: 480px) {
@@ -81,6 +81,6 @@
   }
   .nav__menu .nav__link--current {
     box-shadow: inset 0 -4px var(--clr3Sat);
-    color: var(--white);
+    color: c.$white; 
   }
 }
