@@ -23,11 +23,6 @@ $lightest: 90%;
 $blue: hsla($blue-hue, $sat-base, $base, 1);
 /* Kan lägga till flera varianter av blå, t.ex. med color.change, eller förändra blå utifrån när man vill använda en variant */
 $blue-dark: color.change($blue, $lightness: $dark);
-$blue-dark-desat: color.change(
-  $blue,
-  $saturation: $sat-low,
-  $lightness: $dark
-);
 /* clr2 */
 $lilac: hsla($lilac-hue, $sat-base, $base, 1);
 /* clr3 */
