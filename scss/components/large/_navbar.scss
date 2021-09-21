@@ -1,4 +1,3 @@
-@use '../../abstracts/variables/colors' as c;
 .nav {
   position: relative;
   z-index: 7;
@@ -9,8 +8,8 @@
   text-transform: uppercase;
   text-decoration: none;
   background-image: linear-gradient(
-    hsla(c.$blue-hue, 50%, 15%, 0.8),
-    hsla(c.$blue-hue, 50%, 15%, 1)
+    hsla(207, 50%, 15%, 0.8),
+    hsla(207, 50%, 15%, 1)
   );
   backdrop-filter: blur(10px);
 }
@@ -19,29 +18,29 @@
   padding-bottom: 0.4em;
 }
 .nav__right {
-  box-shadow: inset 0 1px c.$blue-dark-desat;
+  box-shadow: inset 0 1px var(--clr1DarkDesat);
   padding-top: 0.4em;
 }
 
 .nav__home,
 .nav__hamburger,
 .nav__link,
-.nav__home:visited,
-.nav__hamburger:visited,
+.nav__home:visited ,
+.nav__hamburger:visited ,
 .nav__link:visited {
   color: var(--white);
   padding: 1rem 2rem;
 }
 
-.nav__home:hover,
-.nav__hamburger:hover,
+.nav__home:hover ,
+.nav__hamburger:hover ,
 .nav__link:hover {
   background-color: var(--clr1VeryDarkSat);
   text-decoration: none;
 }
 
 .nav__menu .nav__link--current {
-  color: c.$pink; 
+  color: var(--clr3Sat);
 }
 
 @media only screen and (min-width: 480px) {
@@ -81,6 +80,6 @@
   }
   .nav__menu .nav__link--current {
     box-shadow: inset 0 -4px var(--clr3Sat);
-    color: c.$white; 
+    color: var(--white);
   }
 }
