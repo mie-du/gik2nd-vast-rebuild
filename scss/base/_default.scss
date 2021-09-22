@@ -1,15 +1,13 @@
-@use '../abstracts/variables/colors' as *;
-@use '../abstracts/variables/typography' as t;
 
 html {
   font-size: var(--remSize);
-  color: $black;
+  color: var(--black);
 }
 
 body {
-  font-family: t.$font-sans;
-  font-size: t.$font-std;
-  background-color: $white;
+  font-family: var(--fontSans);
+  font-size: var(--fontStd);
+  background-color: var(--white); 
 }
 
 :where(h1) {
@@ -26,7 +24,7 @@ body {
 }
 
 a {  
-  color: hsl($green-hue, $sat-base, $dark); 
+  color: var(--clr4Dark); 
   text-decoration: none;
 }
 
@@ -35,5 +33,5 @@ a:hover {
 }
 
 a:visited {
-  color: hsl($pink-hue, $sat-base, $dark); 
+  color: var(--clr3Dark); 
 }
