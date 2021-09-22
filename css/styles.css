@@ -1019,36 +1019,47 @@ a:visited {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-
 .nav__left {
   padding-bottom: 0.4em;
 }
-
 .nav__right {
   -webkit-box-shadow: inset 0 1px var(--clr1DarkDesat);
           box-shadow: inset 0 1px var(--clr1DarkDesat);
   padding-top: 0.4em;
 }
+.nav__link {
+  color: var(--white);
+  padding: 1rem 2rem;
+}
+.nav__link:visited {
+  color: var(--white);
+  padding: 1rem 2rem;
+}
+.nav__link:hover {
+  background-color: var(--clr1VeryDarkSat);
+  text-decoration: none;
+}
+.nav__link--current {
+  color: var(--clr3Sat);
+}
+@media screen and (min-width: 992px) {
+  .nav__link--current {
+    color: var(--clr3Sat);
+  }
+}
 
 .nav__home,
 .nav__hamburger,
-.nav__link,
 .nav__home:visited,
-.nav__hamburger:visited,
-.nav__link:visited {
+.nav__hamburger:visited {
   color: var(--white);
   padding: 1rem 2rem;
 }
 
 .nav__home:hover,
-.nav__hamburger:hover,
-.nav__link:hover {
+.nav__hamburger:hover {
   background-color: var(--clr1VeryDarkSat);
   text-decoration: none;
-}
-
-.nav__menu .nav__link--current {
-  color: var(--clr3Sat);
 }
 
 @media only screen and (min-width: 480px) {
@@ -1085,12 +1096,6 @@ a:visited {
 .nav__hamburger,
 .nav__link {
     font-size: 0.75em;
-  }
-
-  .nav__menu .nav__link--current {
-    -webkit-box-shadow: inset 0 -4px var(--clr3Sat);
-            box-shadow: inset 0 -4px var(--clr3Sat);
-    color: var(--white);
   }
 }
 :root {
