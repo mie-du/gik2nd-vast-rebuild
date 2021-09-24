@@ -1,31 +1,31 @@
 @use '../variables/' as *;
 
 @mixin screen-sm {
-  @media only screen and (min-width: $size-screen-sm) {
+  @media only screen and (min-width: $screen-sm) {
     @content;
   }
 }
 
 @mixin screen-md {
-  @media screen and (min-width: $size-screen-md) {
+  @media screen and (min-width: $screen-md) {
     @content;
   }
 }
 
 @mixin screen-lg {
-  @media screen and (min-width: $size-screen-lg) {
+  @media screen and (min-width: $screen-lg) {
     @content;
   }
 }
 
 @mixin screen-xl {
-  @media screen and (min-width: $size-screen-xl) {
+  @media screen and (min-width: $screen-xl) {
     @content;
   }
 }
 
 @mixin screen-2xl {
-  @media screen and (min-width: $size-screen-2xl) {
+  @media screen and (min-width: $screen-2xl) {
     @content;
   }
 }
