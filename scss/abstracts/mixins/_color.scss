@@ -20,6 +20,13 @@
   @return hsl(color.hue($color), $sat-high, $darkest);
 }
 
+@function desat($color) {
+  @return hsl(color.hue($color), $sat-low, $base);
+}
+@function sat($color) {
+  @return hsl(color.hue($color), $sat-high, $base);
+}
+
 @function light($color) {
   @return hsl(color.hue($color), $sat-base, $light);
 }
