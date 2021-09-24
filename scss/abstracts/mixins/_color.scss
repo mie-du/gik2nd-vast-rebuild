@@ -1,39 +1,40 @@
-@use '../variables/' as *; 
+@use '../variables/' as *;
+@use 'sass:color';
 
-@function dark($color){
-  @return hsl($color, $sat-base, $dark);
+@function dark($color) {
+  @return hsl(color.hue($color), $sat-base, $dark);
 }
-@function darkest($color){
-  @return hsl($color, $sat-base, $darkest);
+@function darkest($color) {
+  @return hsl(color.hue($color), $sat-base, $darkest);
 }
-@function dark-desat($color){
-  @return hsl($color, $sat-low, $dark);
+@function dark-desat($color) {
+  @return hsl(color.hue($color), $sat-low, $dark);
 }
-@function darkest-desat($color){
-  @return hsl($color, $sat-low, $darkest);
+@function darkest-desat($color) {
+  @return hsl(color.hue($color), $sat-low, $darkest);
 }
-@function dark-sat($color){
-  @return hsl($color, $sat-low, $dark);
+@function dark-sat($color) {
+  @return hsl(color.hue($color), $sat-low, $dark);
 }
-@function darkest-sat($color){
-  @return hsl($color, $sat-high, $darkest);
+@function darkest-sat($color) {
+  @return hsl(color.hue($color), $sat-high, $darkest);
 }
 
-@function light($color){
-  @return hsl($color, $sat-base, $light);
+@function light($color) {
+  @return hsl(color.hue($color), $sat-base, $light);
 }
-@function lightest($color){
-  @return hsl($color, $sat-base, $lightest);
+@function lightest($color) {
+  @return hsl(color.hue($color), $sat-base, $lightest);
 }
-@function light-desat($color){
-  @return hsl($color, $sat-low, $light);
+@function light-desat($color) {
+  @return hsl(color.hue($color), $sat-low, $light);
 }
-@function lightest-desat($color){
-  @return hsl($color, $sat-low, $lightest);
+@function lightest-desat($color) {
+  @return hsl(color.hue($color), $sat-low, $lightest);
 }
-@function light-sat($color){
-  @return hsl($color, $sat-low, $light);
+@function light-sat($color) {
+  @return hsl(color.hue($color), $sat-low, $light);
 }
-@function lightest-sat($color){
-  @return hsl($color, $sat-high, $lightest);
+@function lightest-sat($color) {
+  @return hsl(color.hue($color), $sat-high, $lightest);
 }

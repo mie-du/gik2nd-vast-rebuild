@@ -1,4 +1,4 @@
-@use "sass:color";
+@use 'sass:color';
 
 //Hue
 $blue-hue: 207;
@@ -13,8 +13,8 @@ $sat-high: 60%;
 $sat-low: 20%;
 
 // Lightnes
-$darkest: 8%;
-$dark: 20%;
+$darkest: 20%;
+$dark: 40%;
 $base: 60%;
 $light: 75%;
 $lightest: 90%;
@@ -31,7 +31,6 @@ $pink: hsla($pink-hue, $sat-base, $base, 1);
 $green: hsla($green-hue, $sat-base, $base, 1);
 /* clr5 */
 $yellow: hsla($yellow-hue, $sat-base, $base, 1);
-
 
 $white: hsla($lilac-hue, 100%, 96%);
 $black: hsla($blue-hue, 12%, 17%);
