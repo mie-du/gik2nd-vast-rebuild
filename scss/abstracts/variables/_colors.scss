@@ -8,29 +8,29 @@ $green-hue: 153;
 $yellow-hue: 46;
 
 // Saturation
-$sat-base: 40%;
-$sat-high: 60%;
-$sat-low: 20%;
+$desat: 40%; //low saturation
+$norm-sat: 60%; //normal saturation
+$sat: 20%; //high saturation
 
 // Lightnes
 $darkest: 20%;
 $dark: 40%;
-$base: 60%;
+$norm-light: 60%;
 $light: 75%;
 $lightest: 90%;
 
 /* blå (clr1) */
-$blue: hsla($blue-hue, $sat-base, $base, 1);
+$blue: hsla($blue-hue, $norm-sat, $norm-light, 1);
 /* Kan lägga till flera varianter av blå, t.ex. med color.change, eller förändra blå utifrån när man vill använda en variant */
 $blue-dark: color.change($blue, $lightness: $dark);
 /* clr2 */
-$lilac: hsla($lilac-hue, $sat-base, $base, 1);
+$lilac: hsla($lilac-hue, $norm-sat, $norm-light, 1);
 /* clr3 */
-$pink: hsla($pink-hue, $sat-base, $base, 1);
+$pink: hsla($pink-hue, $norm-sat, $norm-light, 1);
 /* clr4 */
-$green: hsla($green-hue, $sat-base, $base, 1);
+$green: hsla($green-hue, $norm-sat, $norm-light, 1);
 /* clr5 */
-$yellow: hsla($yellow-hue, $sat-base, $base, 1);
+$yellow: hsla($yellow-hue, $norm-sat, $norm-light, 1);
 
 $white: hsla($lilac-hue, 100%, 96%);
 $black: hsla($blue-hue, 12%, 17%);

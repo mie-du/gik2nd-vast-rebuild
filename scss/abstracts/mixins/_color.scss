@@ -1,47 +1,64 @@
 @use '../variables/' as *;
 @use 'sass:color';
 
+/*  sat=högre saturation
+    desat= lägre saturation */
+
+/* gör färgen mörk, med oförändrad saturation */
 @function dark($color) {
-  @return hsl(color.hue($color), $sat-base, $dark);
+  @return hsl(color.hue($color), $norm-sat, $dark);
 }
+/* gör färgen väldigt mörk, med oförändrad saturation */
 @function darkest($color) {
-  @return hsl(color.hue($color), $sat-base, $darkest);
+  @return hsl(color.hue($color), $norm-sat, $darkest);
 }
+/* gör färgen mörk och ger den lägre saturation */
 @function dark-desat($color) {
-  @return hsl(color.hue($color), $sat-low, $dark);
+  @return hsl(color.hue($color), $desat, $dark);
 }
+/* gör färgen väldigt mörk och ger den lägre saturation*/
 @function darkest-desat($color) {
-  @return hsl(color.hue($color), $sat-low, $darkest);
+  @return hsl(color.hue($color), $desat, $darkest);
 }
+/* gör färgen mörk och ger den högre saturation */
 @function dark-sat($color) {
-  @return hsl(color.hue($color), $sat-low, $dark);
+  @return hsl(color.hue($color), $desat, $dark);
 }
+/* gör färgen väldigt mörk och ger den högre saturation */
 @function darkest-sat($color) {
-  @return hsl(color.hue($color), $sat-high, $darkest);
+  @return hsl(color.hue($color), $sat, $darkest);
 }
 
+/* ger färgen endast lägre saturation, ingen förändring i ljushet*/
 @function desat($color) {
-  @return hsl(color.hue($color), $sat-low, $base);
+  @return hsl(color.hue($color), $desat, $norm-light);
 }
+/* ger färgen endast högre saturation, ingen förändring i ljushet*/
 @function sat($color) {
-  @return hsl(color.hue($color), $sat-high, $base);
+  @return hsl(color.hue($color), $sat, $norm-light);
 }
 
+/* gör färgen ljus, med oförändrad saturation */
 @function light($color) {
-  @return hsl(color.hue($color), $sat-base, $light);
+  @return hsl(color.hue($color), $norm-sat, $light);
 }
+/* gör färgen väldigt ljus, med oförändrad saturation */
 @function lightest($color) {
-  @return hsl(color.hue($color), $sat-base, $lightest);
+  @return hsl(color.hue($color), $norm-sat, $lightest);
 }
+/* gör färgen ljus, med lägre saturation */
 @function light-desat($color) {
-  @return hsl(color.hue($color), $sat-low, $light);
+  @return hsl(color.hue($color), $desat, $light);
 }
+/* gör färgen väldigt ljus, med lägre saturation */
 @function lightest-desat($color) {
-  @return hsl(color.hue($color), $sat-low, $lightest);
+  @return hsl(color.hue($color), $desat, $lightest);
 }
+/* gör färgen ljus, med högre saturation */
 @function light-sat($color) {
-  @return hsl(color.hue($color), $sat-low, $light);
+  @return hsl(color.hue($color), $desat, $light);
 }
+/* gör färgen väldigt ljus, med högre saturation */
 @function lightest-sat($color) {
-  @return hsl(color.hue($color), $sat-high, $lightest);
+  @return hsl(color.hue($color), $sat, $lightest);
 }
